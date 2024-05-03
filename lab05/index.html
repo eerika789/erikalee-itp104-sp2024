@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Erika Lee | Form Page</title>
+	<style>
+		h1{
+			font-size:100px;
+			color:#ccbc97;
+			text-align:center;
+			text-shadow: 5px 5px 0px #1c130f;
+			margin:0px;
+		}
+		h2{
+			font-weight:normal;
+			text-align:center;
+		}
+		p{
+			text-align:center;
+			margin-bottom:40px;
+		}
+		body{
+			margin:0px;
+			background-color:#2f1c15;
+			color:whitesmoke;
+			font-size:20px;
+		}
+		button{
+			padding: 10px 20px;
+		}
+		input{
+			font-size:15px;
+		}
+		textarea{
+			font-size:15px;
+		}
+		select{
+			font-size:15px;
+		}
+		#header{
+			margin-top:0px;
+			padding-top:0px;
+			height:600px;
+			line-height:600px;
+			background-image:url('buttonbox.png');
+			background-size:cover;
+			background-position:center;
+			color:white;
+		}
+		#wrapper{
+			background-color:#551316;
+			color:#faf3db;
+			width:1000px;
+			margin:30px auto;
+			padding:10px 20px;
+		}
+		#message {
+			width:40%;
+			height:80px;
+		}
+		#submit{
+			background-color:#ad5d3e;
+			color:whitesmoke;
+		}
+		#reset{
+			background-color:#8c7474;
+			color:whitesmoke;
+		}
+		.form-row{
+			margin:25px 5px;
+			clear:both;
+		}
+		.main-label{
+			width:50%;
+			float:left;
+			font-weight:bold;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div id="header">
+		<h1>Button Order Form</h1>
+	</div> <!-- header -->
+
+	<div id="wrapper">
+		<h2>See the world in a new light with *all new* BUTTON EYES!</h2>
+		<p>Once you've submitted the form, The Beldam will personally send you your brand new eyes.</p>
+		<form action="confirmation.html">
+			<div class="form-row">
+				<label class="main-label" for="fname">First Name:</label>
+				<input id="fname" type="text" placeholder="First Name" required>
+			</div> <!-- form-row -->
+
+			<div class="form-row">
+				<label class="main-label" for="lname">Last Name:</label>
+				<input id="lname" type="text" placeholder="Last Name" required>
+			</div> <!-- form-row -->
+
+			<div class="form-row">
+				<label class="main-label" for="email">Email:</label>
+				<input id="email" type="email" placeholder="youremail@usc.edu" required>
+			</div> <!-- form-row -->
+
+			<div class="form-row">
+				<label class="main-label">What size button would you like?</label>
+				
+				<label for="size-15mm"><input id="size-15mm" type="radio" name="size" value="15mm">15mm</label>
+
+				<label for="size-20mm"><input id="size-20mm" type="radio" name="size" value="20mm">20mm</label>
+				
+				<label for="size-25mm"><input id="size-25mm" type="radio" name="size" value="25mm">25mm</label>
+				
+				<label for="size-30mm"><input id="size-30mm" type="radio" name="size" value="30mm">30mm</label>
+
+			</div> <!-- form-row -->
+
+			<div class="form-row">
+				<label class="main-label">What color(s) would you like?</label>
+
+				<label for="color-black"><input id="color-black" type="checkbox" name="color" value="black">black</label>
+
+				<label for="color-pink"><input id="color-pink" type="checkbox" name="color" value="pink">pink</label>
+
+				<label for="color-vermillion"><input id="color-vermillion" type="checkbox" name="color" value="vermillion">vermillion</label>
+
+				<label for="color-chartreuse"><input id="color-chartreuse" type="checkbox" name="color" value="chartreuse">chartreuse</label>
+
+			</div> <!-- form-row -->
+
+			<div class="form-row">
+				<label class="main-label">If you chose multiple colors, please select a pattern.</label>
+				
+				<label for="pattern-stripes"><input id="pattern-stripes" type="radio" name="pattern" value="stipes">stripes (default)</label>
+
+				<label for="pattern-dots"><input id="pattern-dots" type="radio" name="pattern" value="dots">dots</label>
+
+				<label for="pattern-hearts"><input id="pattern-hearts" type="radio" name="pattern" value="hearts">hearts</label>
+
+				<label for="pattern-stars"><input id="pattern-stars" type="radio" name="pattern" value="stars">stars</label>
+
+			</div> <!-- form-row -->
+
+			<div class="form-row">
+				<label class="main-label" for="shipping">Shipping Preferences:</label>
+
+				<select id="shipping">
+					<option value="" disabled selected>Select An Option</option>
+					<option value="reg">Regular (10 business days)</option>
+					<option value="fast">Fast (7 business days)</option>
+					<option value="xfast">Faster (4 business days)</option>
+				</select>
+			</div> <!-- form-row -->
+
+			<div class="form-row">
+				<label class="main-label" for="message">Preferences or Notes:</label>
+				<textarea id="message" placeholder="Please let us know if you have any other requests!" required></textarea>
+			</div> <!-- form-row -->
+
+			<div class="form-row">
+				<label for="accept-terms"><input id="accept-terms" type="checkbox" name="accept-terms" required> I accept the terms and conditions</label>
+				
+			</div>
+
+			<div class="form-row">
+				<button id="submit" type="submit">Submit</button>
+				<button id="reset" type="reset">Reset</button>
+			</div> <!-- form-row -->
+		</form>
+	</div> <!-- wrapper -->
+
+</body>
+
+</html>

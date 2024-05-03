@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Erika Lee | Page With Media</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+
+
+	<style>
+		body{
+			margin:0;
+			background-color: #282E34;
+		}
+		h1{
+			margin-top:120px;
+			margin-bottom:20px;
+			padding:0px 20px;
+			font-family: "Open Sans";
+			font-size:120px;
+			color:white;
+			background-color:red;
+			display:inline-block;
+		}
+		h2{
+			font-family:sans-serif;
+			color:whitesmoke;
+			text-shadow:-1px 1px 1px #000;
+		}
+		h3{
+			font-family:sans-serif;
+			font-size:35px;
+			margin-top:60px;
+			margin-bottom:20px;
+			text-align: center;
+			color:#DEE6EE;
+		}
+		.button{
+			color:whitesmoke;
+			margin:10px auto;
+			width:100px;
+			background-color: red;
+			border-radius:25px;
+			padding: 12px 17px;
+			font-size:17px;
+		}
+		.button:hover{
+			background-color:darkred;
+		}
+		#header a{
+			text-decoration: none;
+			color:whitesmoke;
+		}
+		#header{
+			background-image: url("bags.jpeg");
+			background-repeat:no-repeat;
+			background-size: cover;
+			background-position: center;
+			height:500px;
+			text-align: center;
+			margin-bottom:50px;
+		}
+		#middle, #bottom{
+			width:1000px;
+			margin:0 auto;
+		}
+		.video, .details{
+			display:inline-block;
+			vertical-align: top;
+		}
+		.details{
+			color:#DEE6EE;
+			font-family: sans-serif;
+			width:410px;
+			margin-top: 20px;
+			margin-left:30px;
+			font-size:20px;
+		}
+		.bag-card{
+			width:300px;
+			margin:15px;
+			display:inline-block;
+			text-align: center;
+			position:relative;
+			
+		}
+		.bag-card img{
+			width:300px;
+			height:auto;
+			z-index: 1;
+			
+		}
+		.imgoverlay{
+			background-color: rgba(0, 0, 0, 0.5);
+			visibility: hidden;
+			position: absolute;
+			width:100%;
+			height:100%;
+			z-index: 2;
+			color:whitesmoke;
+			line-height:290px;
+		}
+		.bag-card:hover .imgoverlay{
+			visibility:visible;
+		}
+		.clear-float{
+			clear:both;
+		}
+		#bottom a{
+			text-decoration:none;
+			color:black;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1>UNIQLO</h1>
+		<h2>Round Mini Shoulder Bag</h2>
+
+		<a href="https://www.uniqlo.com/us/en/products/E461053-000/00?colorDisplayCode=09" target="_blank"><div class="button">SHOP NOW</div></a>
+	</div> <!-- header -->
+	<div id="middle">
+		<div class="video">
+		<iframe width="550" height="315" src="https://www.youtube.com/embed/v23H8ONUE-E?si=RAZelBkSGHQVhE68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div> <!-- video -->
+
+		<div class="details">
+			<p>Details:</p>
+			<ul>
+				<li>Dirt-resistant nylon fabric with a naturally wrinkled texture.</li>
+				<li>Water-repellent finish.</li>
+				<li>Shaped to fit the body for active wear.</li>
+				<li>Convenient size that fits your smartphone and wallet.</li>
+				<li>Handy inner pocket for your keys and valuables.</li>
+				<li>Unisex design.</li>
+			</ul>
+		</div> <!-- details -->
+
+
+	<div class="clearfloat"></div>
+	</div> <!-- middle -->
+
+
+	<div id="bottom">
+		<h3>Our Favorite Colors</h3>
+		<a href="https://www.uniqlo.com/us/en/products/E461053-000/00?colorDisplayCode=10" target="_blank">
+		<div class="bag-card">
+			<div class="imgoverlay"><p>10	PINK</p></div>
+			<img src="pink.JPG" alt="pink bag">
+		</div>
+		</a>
+		<a href="https://www.uniqlo.com/us/en/products/E461053-000/00?colorDisplayCode=62" target="_blank">
+		<div class="bag-card">
+			<div class="imgoverlay"><p>62	BLUE</p></div>
+			<img src="blue.JPG" alt="blue bag">
+			
+		</div>
+		</a>
+		<a href="https://www.uniqlo.com/us/en/products/E461053-000/00?colorDisplayCode=72" target="_blank">
+		<div class="bag-card">
+			<div class="imgoverlay"><p>72	PURPLE</p></div>
+			<img src="purple.JPG" alt="purple bag">
+			
+		</div>
+		</a>
+	</div> <!-- bottom -->
+
+</body>
+</html>

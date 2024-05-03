@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="style.css" rel="stylesheet" />
+<title>Erika Lee | Simple Photo Gallery</title>
+
+<style>
+	h1{
+		margin:0px;
+		font-size: 90px;
+		text-align:center;
+	}
+
+	h2{
+		color:#6F5541;
+		text-align:center;
+	}
+
+	body{
+		margin: 0px;
+		background-color:#FFFACD;
+	}
+
+	img {
+		width:100%;
+		height:auto;
+	}
+
+	#header {
+		height: 250px;
+		line-height: 250px;
+		background-size:cover;
+		background-image: url('img/frogbackground.png');
+		background-position:center center;
+
+	}
+	
+	#gallery {
+		margin:0 15%;
+	}
+
+	.clearfloat{
+		clear:both;
+	}
+	
+	.thumbnail-container {
+		float:left;
+		width:300px;
+		height:350px;
+		text-align:center;
+		margin:20px;
+	}
+
+	.thumbnail {
+		width:300px;
+		height:300px;
+		background-color: lightgreen;
+		border: 1px solid #000;
+		overflow: hidden;
+		border-radius: 10%;
+		opacity:1;
+	}
+	
+	.thumbnail:hover {
+		opacity:0.8;
+	}
+	
+	.thumbnail-container p {
+		visibility:hidden;
+	}
+	
+	.thumbnail-container:hover p {
+		visibility:visible;
+	}
+
+	.row{
+		height:auto;
+	}
+			
+	</style>
+
+</head>
+<body>
+
+<div id="header">
+<h1>Oliver's Adventures</h1>
+</div><!-- header -->
+
+<div id="content">
+
+<h2>It's hard being a little frog in a big world.</h2>
+
+<div id="gallery">
+
+	<div class="thumbnail-container">
+	<div class="thumbnail">
+		<img src="img/bread.jpeg" alt="Oliver and Bread">
+	</div> <!-- .thumbnail -->
+	<p>Oliver eats bread!</p>
+	</div>
+
+	<div class="thumbnail-container">
+	<div class="thumbnail">
+			<img src="img/coffee.jpeg" alt="Oliver and Coffee">
+	</div> <!-- .thumbnail -->
+		<p>Waiting for the coffee to cool.</p>
+	</div>
+
+	<div class="thumbnail-container">
+	<div class="thumbnail">
+		<img src="img/windowstand.jpeg" alt="Oliver Standing by the Window">
+	</div> <!-- .thumbnail -->
+		<p>Wistfully looking out the window.</p>
+	</div>
+
+	<div class="thumbnail-container">
+	<div class="thumbnail">
+		<img src="img/salad.jpeg" alt="Oliver and Salad">
+	</div> <!-- .thumbnail -->
+		<p>Yummy! Oliver loves salads!</p>
+	</div>
+
+	<div class="thumbnail-container">
+	<div class="thumbnail">
+		<img src="img/fancy.jpeg" alt="Oliver is Fancy">
+	</div> <!-- .thumbnail -->
+	<p>A very fancy dinner fit for a very fancy frog.</p>
+	</div>
+
+	<div class="thumbnail-container">
+	<div class="thumbnail">
+		<img src="img/windowsit.jpeg" alt="Oliver Sits at the Window">
+	</div> <!-- .thumbnail -->
+		<p>This is Oliver's favorite thinking spot.</p>
+	</div>
+
+	<div class="clearfloat"></div>
+</div> <!-- #gallery -->
+
+
+</div> <!-- #content -->
+
+</body>
+</html>
