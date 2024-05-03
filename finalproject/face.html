@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>face</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<style>
+		#heading{
+			font-family:starborn, serif;
+			margin-top:45px;
+			padding:110px 0;
+			background-color:#F3D2FF;
+			text-align: center;
+			font-size: 25px;
+			position:relative;
+		}
+
+		.star02-1{
+			position:absolute;
+			top:200px;
+			right:350px;
+			z-index: 1;
+		}
+
+		.star02-1 img{
+			width:200px;
+			height:auto;
+			transform:rotate(130deg);
+		}
+
+		.star02-2{
+			position:absolute;
+			top:290px;
+			right:110px;
+			z-index: 1;
+		}
+
+		.star02-2 img{
+			width:300px;
+			height:auto;
+		}
+
+		.star02-3{
+			position:absolute;
+			top:1000px;
+			left:490px;
+			z-index: 1;
+		}
+
+		.star02-3 img{
+			width:180px;
+			height:auto;
+			transform:rotate(-35deg);
+		}
+
+		#notes-section{
+			font-family:heart,serif;
+			line-height:35px;
+			color:#5C73A8;
+			margin:0;
+			padding:35px;
+			background-color:#C8E1FF;
+		}
+
+		#product-section{
+			margin:0;
+			padding:40px;
+			background-color:#FFE9F6;
+			
+		}
+
+		#product-section a{
+			text-decoration: none;
+		}
+
+		.product-row{
+			margin:20px auto;
+			padding:40px 30px;
+			width:1100px;
+			display:flex;
+			flex-direction:row;
+		}
+
+		.thumbnail{
+			margin:4%;
+			height:200px;
+			width:92%;
+			overflow:hidden;
+			border-radius:5px;
+		}
+
+		.thumbnail img{
+			position: relative;
+		    top: -13%;
+		}
+
+		.card{
+			margin:0px 28px;
+			background-color:#C8E1FF;
+			width:400px;
+			height:470px;
+		}
+
+		.card-body{
+			color:#5C73A8;
+			padding-bottom:3px;
+		}
+		
+		.card h4{
+			font-size: 15px;
+			color:#8e9ec3;
+		}
+
+		.card:hover .overlay{
+			visibility: visible;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="navWrapper">
+	<div id="nav">
+		<div class="home">
+			<a href="index.html"><img src="icons/homeicon.png" alt="home icon">home</a>
+		</div>
+		<ul>
+			<li><a href="eye.html">eye</a>
+				<ul>
+					<li><a href="linerlash.html">liner & lash</a></li>
+					<li><a href="glitter.html">glitter</a></li>
+				</ul>
+			</li>
+			<li><a href="face.html">face</a></li>
+			<li><a href="lip.html">lip</a></li>
+		</ul>	
+		<div class="clearfloat"></div>
+	</div> <!-- nav -->
+	<div class="clearfloat"></div>
+	</div> <!-- navWrapper -->
+
+	<div id="heading">
+		<h1>face</h1>
+		<div class="star02-1">
+			<img src="stars/star02.png" alt="star graphic">
+		</div>
+		<div class="star02-2">
+			<img src="stars/star02.png" alt="star graphic">
+		</div>
+	</div>
+
+	<div id="content">
+		<div id="notes-section">
+			<ul>
+				<li>honestly i don't really use or know much about face products</li>
+				<li>sunscreen is an absolute must!!!</li>
+				<li>fyi, shade ranges for foundations in Korea are pretty horrendous; for most brands, they only have 3 shades of pale, paler, and palest :/</li>
+				<li>for blush i would probably recommend American brands over Korean; they're much more pigmented</li>
+			</ul>
+		</div>
+
+		<div id="product-section">
+			<div class="star02-3">
+				<img src="stars/star02.png" alt="star graphic">
+			</div>
+			<div class="product-row">
+
+				<a href="https://skin1004.com/collections/sun/products/hyalu-cica-water-fit-sun-serum-spf50-pa" target="_blank">
+					<div class="card" style="width: 18rem;">
+						<div class="thumbnail">
+						 	<img src="imgs/face2.jpg" class="card-img-top" alt="Hyalu-Cica Water-Fit Sun Serum">
+						</div>
+						<div class="card-body">
+							<h4>SKIN1004</h4>
+							<h5 class="card-title">Hyalu-Cica Water-Fit Sun Serum SPF50+ PA++++</h5>
+							<ul class="card-text">
+								<li>korean sunscreens hit different</li>
+								<li>no whitecast, not too thick; literally feels like moisturizer</li>
+								<li>i use this every. single. day.</li>
+							</ul>
+							<div class="overlay"></div>
+						</div>
+					</div>
+				</a>
+
+				<a href="https://romand.us/products/bare-water-cushion" target="_blank">
+					<div class="card" style="width: 18rem;">
+						<div class="thumbnail">
+						 	<img src="imgs/face1.jpg" class="card-img-top" alt="Bare Water Cushion">
+						</div>
+						<div class="card-body">
+							<h4>Rom&nd</h4>
+							<h5 class="card-title">Bare Water Cushion</h5>
+							<ul class="card-text">
+								<li>cushion foundation</li>
+								<li>very thin, light coverage</li>
+								<li>double check the shades, they might be too light</li>
+							</ul>
+							<div class="overlay"></div>
+						</div>
+					</div>
+				</a>
+
+				<a href="https://global.oliveyoung.com/product/detail?prdtNo=GA240121955" target="_blank">
+					<div class="card" style="width: 18rem;">
+						<div class="thumbnail">
+						 	<img src="imgs/face3.jpg" class="card-img-top" alt="Lip & Cheek Blurry Pudding Pot">
+						</div>
+						<div class="card-body">
+							<h4>fwee</h4>
+							<h5 class="card-title">Lip & Cheek Blurry Pudding Pot</h5>
+							<ul class="card-text">
+								<li>velvet matte lip & cheek</li>
+								<li>went super viral for having a pop-up shop in Korea</li>
+								<li>at the pop-up they can put the blush in a pot or a keychain!</li>
+							</ul>
+							<div class="overlay"></div>
+						</div>
+					</div>
+				</a>
+
+			</div>
+		</div>
+		
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
