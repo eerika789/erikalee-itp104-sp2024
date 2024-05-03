@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Erika Lee | Calendar</title>
+	<style>
+		h1{
+			font-size:120px;
+			color:#f47fb8;
+			text-shadow: 4px 4px 0px #320e00;
+			/* remove margin at top */
+			margin:0px;
+		}
+		body{
+			margin:0px;
+			padding:0px;
+			color:black;
+			background-color:#fae3eb;
+		}
+		table{
+			border-collapse: collapse;
+			text-align: center;
+		}
+		th{
+			border: 1px solid #d791a9;
+			padding: 10px 0px;
+			background-color:#efa1bc;
+			width: 180px;
+		}
+		td{
+			border: 1px solid #ddacbc;
+			padding: 10px 10px;
+			background-color:#fde5e5;
+			vertical-align:top;
+			text-align:right;
+			height:150px;
+		}
+		#header{
+			background-image:url('imgs/sanriochars.png');
+			background-size:cover;
+			background-position:center bottom;
+			height:600px;
+			text-align:center;
+			line-height:400px;
+		}
+		#calendar{
+			width:1260px;
+			margin:20px auto;
+			margin-top:0px;
+			margin-bottom:0px;
+		}
+		.pi{
+			background-image:url('imgs/pie.jpeg');
+			background-size:cover;
+		}
+		.spring{
+			background-image:url('imgs/spring.jpeg');
+			background-size:cover;
+		}
+		.birthday{
+			background-image:url('imgs/birthday.jpeg');
+			background-size:cover;
+		}
+		.holidayText{
+			padding:1px;
+			font-size:30px;
+			text-align:center;
+			border-radius:50%;
+			color:#fef5f5;
+			background-color:rgba(0, 0, 0, 0.5);
+		}
+		.notMarch{
+			background-color:#E4CDCD;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="header">
+		<h1>March 2024</h1>
+	</div> <!-- header -->
+
+	<div id="calendar">
+		<table>
+			<tr>
+				<th>Sunday</th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+				<th>Saturday</th>
+			</tr>
+			<tr>
+				<td class="notMarch">25</td>
+				<td class="notMarch">26</td>
+				<td class="notMarch">27</td>
+				<td class="notMarch">28</td>
+				<td class="notMarch">29</td>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+				<td>13</td>
+				<td class="pi">14
+				<div class="holidayText">
+						<p>Pi Day</p>
+					</div></td>
+				<td>15</td>
+				<td>16</td>
+			</tr>
+			<tr>
+				<td>17</td>
+				<td>18</td>
+				<td class="spring">19
+				<div class="holidayText">
+						<p>First Day of Spring</p>
+					</div></td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+			</tr>
+			<tr>
+				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<td class="birthday">31
+					<div class="holidayText">
+						<p>Erika's Birthday</p>
+					</div>
+				</td>
+				<td class="notMarch">1</td>
+				<td class="notMarch">2</td>
+				<td class="notMarch">3</td>
+				<td class="notMarch">4</td>
+				<td class="notMarch">5</td>
+				<td class="notMarch">6</td>
+			</tr>
+		</table>
+	</div> <!-- calendar -->
+</body>
+
+</html>
