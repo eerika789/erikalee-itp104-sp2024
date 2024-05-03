@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Erika Lee | Final Project Homepage</title>
+	<link href="style.css" rel="stylesheet">
+	<style>
+		#heading{
+			margin-top:45px;
+			padding:50px 0;
+			background-color:#FCBFD8;
+			text-align: center;
+			font-size: 30px;
+			position:relative;
+		}
+
+		#heading h1{
+			color:#5C73A8;
+		}
+
+		.star01{
+			position:absolute;
+			top:330px;
+			right:50px;
+			z-index: 1;
+		}
+		.star01 img{
+			width:300px;
+			height:auto;
+		}
+
+		.star02{
+			position:absolute;
+			top:-20px;
+			left:40px;
+			z-index: 1;
+		}
+
+		.star02 img{
+			width:300px;
+			height:auto;
+		}
+
+		#content{
+			margin:0;
+			padding:0;
+		}
+
+		#icon-section{
+			width:100%;
+			background-color:#BED9F9;
+			margin:0;
+			color:#8a6a87;
+		}
+
+		.icon-links{
+			width:810px;
+			margin:0 auto;
+			display:flex;
+		}
+
+		.icon{
+			text-align: center;
+			margin:30px 60px;
+			font-size:20px;
+		}
+
+		.icon .thumbnail{
+			width:150px;
+			height:150px;
+			border-radius:50%;
+			overflow:hidden;
+		}
+
+		.icon img{
+			width:120%;
+			height:auto;
+		}
+
+		#message-section{
+			background-color: #FFE9F6;
+			margin:0;
+			padding:80px 0;
+			text-align: center;
+			color:#5C73A8;
+		}
+
+		#form-section{
+			background-color: #A880A5;
+			margin:0;
+			padding:80px 0;
+			text-align:center;
+			color:#FFE9F6;
+		}
+
+		.formWrapper{
+			text-align: left;
+			font-size: 20px;
+			width:350px;
+			margin:0 auto;
+		}
+
+		.form-group{
+			margin:5px;
+		}
+
+		.question{
+			width:45%;
+			float:left;
+		}
+
+		input, select, textarea{
+			background-color:#FFE9F6;
+			width:160px;
+			color:#8a6a87;
+		}
+
+		.button-group{
+			text-align: center;
+		}
+
+		button{
+			color:#8a6a87;
+			background-color:#FFE9F6;
+		}
+	</style>
+</head>
+<body>
+	<div id="navWrapper">
+	<div id="nav">
+		<ul>
+			<li><a href="">Eye</a>
+				<ul>
+					<li><a href="">Eyeliner</a></li>
+					<li><a href="">Glitter</a></li>
+				</ul>
+			</li>
+			<li><a href="">Face</a></li>
+			<li><a href="">Lip</a></li>
+		</ul>	
+		<div class="clearfloat"></div>
+	</div> <!-- nav -->
+	<div class="clearfloat"></div>
+	</div> <!-- navWrapper -->
+
+	<div id="heading">
+		<div class="star02">
+			<img src="stars/star02.png" alt="star graphic">
+		</div>
+
+		<h1>erika's</h1>
+		<h1>korean makeup</h1>
+		<h1>guide</h1>
+
+		<div class="star01">
+			<img src="stars/star01.png" alt="star graphic">
+		</div>
+	</div> <!-- heading -->
+
+	<div id="content">
+		<div id="icon-section">
+			<div class="icon-links">
+				<div class="icon">
+					<div class="thumbnail">
+						<img src="icons/eye.png" alt="eye">
+					</div> <!-- thumbnail -->
+					<p>eye</p>
+				</div> <!-- icon -->
+				<div class="icon">
+					<div class="thumbnail">
+						<img src="icons/face.png" alt="face">
+					</div> <!-- thumbnail -->
+					<p>face</p>
+				</div> <!-- icon -->
+				<div class="icon">
+					<div class="thumbnail">
+						<img src="icons/lip.png" alt="lip">
+					</div> <!-- thumbnail -->
+					<p>lip</p>
+				</div> <!-- icon -->
+			</div> <!-- icon-links -->
+		</div> <!-- icon-section -->
+
+		<div id="message-section">
+			<h3>This is a curated collection of Korean makeup products by Erika Lee.</h3>
+		</div> <!-- message-section -->
+
+		<div id="form-section">
+			<h2>Makeup Suggestion Form</h2>
+			<div class="formWrapper">
+				<form action="confirmation.html">
+			        <div class="form-group">
+			            <label class="question" for="product_name">Product Name:</label>
+			            <input type="text" id="product_name" name="product_name" required>
+			        </div>
+			        <div class="form-group">
+			            <label class="question" for="brand">Brand:</label>
+			            <input type="text" id="brand" name="brand" required>
+			        </div>
+			        <div class="form-group">
+			            <label class="question" for="category">Category:</label>
+			            <select id="category" name="category" required>
+			                <option value="">Select a category</option>
+			                <option value="Eye">Eye</option>
+			                <option value="Face">Face</option>
+			                <option value="Lip">Lip</option>
+			            </select>
+			        </div>
+			        <div class="form-group">
+			            <label class="question" for="description">Link to Product:</label>
+			            <textarea id="description" name="description" rows="2" required></textarea>
+			        </div>
+			        <div class="button-group">
+			            <button type="submit">Submit</button>
+			        </div>
+			    </form>
+			</div> <!-- formWrapper -->
+		</div> <!-- suggestion-form -->
+	</div> <!-- content -->
+
+	<div id="footer">
+	</div> <!-- footer -->
+</body>
+</html>
