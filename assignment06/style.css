@@ -1,0 +1,105 @@
+@font-face{
+	font-family:"coraline";
+	src:url("fonts/coraline-cat.ttf");
+}
+h1{
+	font-family:coraline;
+}
+
+body{
+	margin:0px;
+	background-color:#001f0f;
+	color:whitesmoke;
+}
+
+a{
+	color:#eaed8c;
+}
+
+#navWrapper{
+	background-color:#132b38;
+	margin:0;
+}
+
+#nav {
+	width:600px;
+	margin:0 auto;
+	padding:0;
+}
+
+#nav ul{
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+	z-index:1;
+}
+
+#nav a {
+	font-family: "Slackside One";
+	font-size: 25px;
+	padding:0 0 5px 0;
+	text-decoration: none;
+	background-color: #132b38;
+	width:298px;
+	height:40px;
+	line-height:35px;
+	margin:0;
+	display: inline-block;
+	text-align: center;	
+	color: white;
+}
+
+#nav a:hover {
+	background-color:#114d6c;
+	color: white;
+}
+
+#nav a.open {
+	background-color:#114d6c;
+	color:white;
+}
+
+#nav li{
+	width:298px;
+	float:left;
+	line-height: 40px;
+	text-align: center;
+	position:relative;
+}
+
+#nav ul ul{
+	visibility:hidden;
+	position:absolute;
+}
+
+#nav li:hover > ul{
+	visibility:visible;
+}
+
+#wrapper{
+	width:1032px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#415027;
+}
+
+#content{
+	width:800px;
+	line-height:1.5;
+	float:right;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#6d7434;
+	color:#faf3db;
+	padding:20px;
+}
+
+#footer{
+	background-color:#364622;
+	text-align:center;
+	padding:20px;
+}
+
+.clearfloat{
+	clear:both;
+}

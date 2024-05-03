@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Coraline | Gallery</title>
+	<link href="style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Slackside+One&display=swap" rel="stylesheet">
+
+	<style>
+		#header{
+			background-image:url('imgs/pensive.jpg');
+			background-size:cover;
+			background-position:center top;
+			line-height:170px;
+			height:500px;
+		}
+		h1{
+			font-size:80px;
+			color:#eaed8c;
+			text-align: right;
+			text-shadow: 5px 5px 0px #3f4029;
+			margin-top:0px;
+			margin-right:80px;
+			padding-top:50px;
+		}
+		.thumb1{
+			width:392px;
+			height:250px;
+			overflow:hidden;
+			float:left;
+			position:relative;
+		}
+		.thumb2{
+			width:248px;
+			height:250px;
+			overflow:hidden;
+			float:left;
+			position:relative;
+		}
+		.thumb3{
+			width:275px;
+			height:330px;
+			overflow:hidden;
+			float:left;
+			position:relative;
+		}
+		.thumb4{
+			width:482px;
+			height:330px;
+			overflow:hidden;
+			float:left;
+			position:relative;
+		}
+		.thumb5{
+			width:258px;
+			height:200px;
+			overflow:hidden;
+			float:left;
+			position:relative;
+		}
+		.thumb1 > img, .thumb4 > img{
+			width:100%;
+			height:auto;
+		}
+		.thumb2 > img, .thumb3 > img, .thumb5 > img{
+			width:auto;
+			height:100%;
+		}
+
+		.overlay{
+			background:#00000040;
+			color:white;
+			position:absolute;
+			top:0;
+			left:0;
+			bottom:0;
+			right:0;
+			padding:0 10px;
+			text-align:center;
+			visibility:hidden;
+		}
+
+		.thumb1 .overlay, .thumb2 .overlay{
+			padding-top:100px;
+		}
+		.thumb3 .overlay, .thumb4 .overlay{
+			padding-top:150px;
+		}
+		.thumb5 .overlay{
+			padding-top:80px;
+		}
+
+		.thumb1:hover .overlay{
+			visibility:visible;
+		}
+		.thumb2:hover .overlay{
+			visibility:visible;
+		}
+		.thumb3:hover .overlay{
+			visibility:visible;
+		}
+		.thumb4:hover .overlay{
+			visibility:visible;
+		}
+		.thumb5:hover .overlay{
+			visibility:visible;
+		}
+
+	</style>
+</head>
+
+
+<body>
+	<div id="header">
+		<!--background img-->
+		<h1>Photo<br>Gallery</h1>
+	</div> <!--header-->
+
+	<div id="navWrapper">
+	<div id="nav">
+		<ul>
+			<li><a href="index.html">Home</a>
+				<ul>
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="index.html#production">Production</a></li>
+					<li><a href="index.html#music">Music</a></li>
+				</ul>
+			</li>
+			<li><a href="gallery.html"  class="open">Gallery</a></li>
+		</ul>	
+		<div class="clearfloat"></div>
+	</div> <!-- #nav -->
+	</div>
+
+	<div id="wrapper">
+	<div id="row1">
+		<div class="thumb1">
+			
+			<img src="gallery/arguemom.jpg" alt="Coraline Argues with Mom">
+			<div class="overlay"><p>Coraline arguing with her real mom.</p></div>
+		</div> <!-- thumb1 -->
+		<div class="thumb2">
+			<img src="gallery/gloves.jpeg" alt="Gloves at the Department Store">
+			<div class="overlay"><p>Coraline showing off the gloves she likes at the department store.</p></div>
+		</div> <!-- thumb2 -->
+		<div class="thumb1">
+			<img src="gallery/fathercomputer.png" alt="Coraline's Dad working">
+			<div class="overlay"><p>Coraline bothering her dad while he's working.</p></div>
+		</div> <!-- thumb1 -->
+	</div>	<!-- row1 -->
+	<div class="clearfloat"></div>
+	<div id="row2">
+		<div class="thumb3">
+			<img src="gallery/angryothermother.jpeg" alt="Other Mother">
+			<div class="overlay"><p>Other Mother when Coraline tries to escape.</p></div>
+		</div> <!-- thumb1 -->
+		<div class="thumb4">
+			<img src="gallery/talkcat.jpeg" alt="Coraline Talks with the Cat">
+			<div class="overlay"><p>Coraline talking with the cat.</p></div>
+		</div> <!-- thumb4 -->
+		<div class="thumb3">
+			<img src="gallery/otherkitchen.jpeg" alt="Other Mother's Kitchen">
+			<div class="overlay"><p>Other Mother giving Coraline a strawberry.</p></div>
+		</div> <!-- thumb3 -->
+	</div> <!-- row 2 -->
+	<div class="clearfloat"></div>
+	<div id="row3">
+		<div class="thumb5">
+			<img src="gallery/bobinsky.png" alt="Bobinksy">
+			<div class="overlay"><p>Coraline's upstairs neighbors, Mr. Bobinsky.</p></div>
+		</div> <!-- thumb5 -->
+		<div class="thumb5">
+			<img src="gallery/pinkpalace.jpeg" alt="Pink Palace">
+			<div class="overlay"><p>The Pink Palace where Coraline lives.</p></div>
+		</div> <!-- thumb5 -->
+		<div class="thumb5">
+			<img src="gallery/cottoncandy.jpeg" alt="Coraline and Wybie">
+			<div class="overlay"><p>Coraline and Other Wybie in Mr. Bobinsky's apartment (in the other world).</p></div>
+		</div> <!-- thumb5 -->
+		<div class="thumb5">
+			<img src="gallery/spinkforcible.jpeg" alt="Spink and Forcible">
+			<div class="overlay"><p>Coraline's downstairs neighbors, Miss. Spink and Miss. Forcible</p></div>
+		</div> <!-- thumb5 -->
+	</div> <!-- row 3 -->
+	<div class="clearfloat"></div>
+	</div> <!-- wrapper -->
+
+	<div id="footer">
+		<a href="https://www.max.com/movies/2c315d70-082d-44e4-b5fc-1085a62e8d90" target="_blank">Watch it on Max</a>
+	</div> <!--footer-->
+</body>
+
+</html>
